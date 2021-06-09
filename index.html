@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Cards</title>
+  </head>
+  <body>
+    <div class="contents-wrap">
+      <div class="title">
+        <span class="title-text">Memory Cards</span>
+        <button class="add-btn">+ Add New Card</button>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="flip"></div>
+          <div class="text"></div>
+        </div>
+      </div>
+      <div class="move">
+        <button class="back"><i class="fas fa-arrow-left"></i></button>
+        <span class="num-card"
+          ><span class="current-num">0</span> /
+          <span class="total-num">0</span></span
+        >
+        <button class="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <button class="clear-btn"><i class="fas fa-trash"></i> Clear Cards</button>
+
+    <div class="add-card-wrap">
+      <div class="add-card-title">
+        <span class="title">Add New Card</span>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <form class="add-form">
+        <label for="question-area"
+          >Question
+          <textarea
+            rows="2"
+            id="question-area"
+            required
+            placeholder="Enter the Question..."
+          ></textarea>
+        </label>
+        <label for="answer-area"
+          >Answer
+          <textarea
+            rows="2"
+            id="answer-area"
+            required
+            placeholder="Enter the Answer..."
+          ></textarea>
+        </label>
+        <button type="submit" class="add-confirm">+ Add Card</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
